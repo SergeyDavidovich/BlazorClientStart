@@ -1,5 +1,5 @@
 {
-  "name": "BlazorClientStart",
+  "name": "Blazor Client Start",
   "short_name": "BlazorClientStart",
   "start_url": "./",
   "display": "standalone",
@@ -8,12 +8,12 @@
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "icon-512.png",
+      "src": "Cloud-Icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "icon-192.png",
+      "src": "Cloud-Iicon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     }
