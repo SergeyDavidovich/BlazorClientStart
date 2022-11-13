@@ -229,7 +229,7 @@
       "url": "index.html"
     },
     {
-      "hash": "sha256-gzhozgwt+Je9Z\/CHzx31mq+ibljQtJDJVyi03A1VF0w=",
+      "hash": "sha256-W09CNmaXyYVvDDFAGsyr933hTAydUeAT8EV6nF8cUrs=",
       "url": "manifest.json"
     },
     {
@@ -237,5 +237,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "qqO\/mp2w"
+  "version": "Pe7IOmlw"
 };
