@@ -1,11 +1,15 @@
 ﻿@page "/fetchdata"
 @inject HttpClient Http
 
+@inject HttpClient Http
+
 <PageTitle>Weather forecast</PageTitle>
+<Animate Animation="Animations.FadeIn" DurationMs="1000">
 
-<h1>Weather forecast</h1>
+    <h1 style="margin-top:80px;">Weather forecast</h1>
 
-<p>This component demonstrates fetching data from the server.</p>
+    <p>This component demonstrates fetching data from the server.</p>
+</Animate>
 
 @if (forecasts == null)
 {
@@ -13,29 +17,30 @@
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
-                <th>Summary</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var forecast in forecasts)
-            {
+    <Animate Animation="Animations.FadeIn" DurationMs="1000">
+        <table class="table" style="width:60%; margin:auto; color:var(--bs-body-color)!important">
+            <thead>
                 <tr>
-                    <td>@forecast.Date.ToShortDateString()</td>
-                    <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
+                    <th>Date</th>
+                    <th>Temp. (C)</th>
+                    <th>Temp. (F)</th>
+                    <th>Summary</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var forecast in forecasts)
+                {
+                    <tr>
+                        <td>@forecast.Date.ToShortDateString()</td>
+                        <td>@forecast.TemperatureC</td>
+                        <td>@forecast.TemperatureF</td>
+                        <td>@forecast.Summary</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </Animate>
 }
-
 @code {
     private WeatherForecast[]? forecasts;
 
@@ -46,7 +51,7 @@ else
 
     public class WeatherForecast
     {
-        public DateOnly Date { get; set; }
+        public DateTime Date { get; set; }
 
         public int TemperatureC { get; set; }
 
