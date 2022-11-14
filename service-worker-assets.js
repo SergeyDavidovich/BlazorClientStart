@@ -81,7 +81,7 @@
       "url": "images\/logo.jpg"
     },
     {
-      "hash": "sha256-H3aWM+zHBpHnqAN88NPZNvokWj1l\/IzmU9Po9uh6pz4=",
+      "hash": "sha256-yCUNcXjF2T5WhnwPG+FyLOSuzTkdVYejy2X1CL0lYpg=",
       "url": "index.html"
     },
     {
@@ -657,5 +657,5 @@
       "url": "_content\/Syncfusion.Blazor.Themes\/tailwind.css"
     }
   ],
-  "version": "vyq7qwHh"
+  "version": "TCBtcKL3"
 };
