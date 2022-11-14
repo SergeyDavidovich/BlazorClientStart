@@ -1,19 +1,62 @@
 /* /Shared/MainLayout.razor.rz.scp.css */
-.page[b-69ndupoki1] {
+:root[b-69ndupoki1] {
+    --sidebar-width: 250px;
+    --toolbar-height: 52px;
+}
+
+.e-toolbar[b-69ndupoki1] {
+    z-index: 1000;
+    background-color: #566575;
+}
+
+    .e-toolbar .e-toolbar-items[b-69ndupoki1] {
+        background-color: transparent;
+        height: var(--toolbar-height) !important;
+    }
+
+    .e-toolbar .e-tbar-btn[b-69ndupoki1] {
+        background: transparent;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+        
+        color: #ffffff;
+    }
+
+.e-btn[b-69ndupoki1], .e-css.e-btn[b-69ndupoki1] {
+    background-color: transparent;
+}
+
+
+.e-sidebar[b-69ndupoki1] {
+    color: black;
+    background-color: slategray;
+    height: 100vh;
+    width: var(--sidebar-width) !important;
+}
+
+.text-content[b-69ndupoki1] {
+    font-size: 1.5rem;
+    padding: 3rem;
+}
+
+.main > div[b-69ndupoki1] {
+    padding: 0px !important;
+}
+/* /Shared/MainLayout1.razor.rz.scp.css */
+.page[b-f8ltaaqajf] {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-main[b-69ndupoki1] {
+main[b-f8ltaaqajf] {
     flex: 1;
 }
 
-.sidebar[b-69ndupoki1] {
+.sidebar[b-f8ltaaqajf] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 }
 
-.top-row[b-69ndupoki1] {
+.top-row[b-f8ltaaqajf] {
     background-color: #f7f7f7;
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
@@ -22,60 +65,60 @@ main[b-69ndupoki1] {
     align-items: center;
 }
 
-    .top-row[b-69ndupoki1]  a, .top-row[b-69ndupoki1]  .btn-link {
+    .top-row[b-f8ltaaqajf]  a, .top-row[b-f8ltaaqajf]  .btn-link {
         white-space: nowrap;
         margin-left: 1.5rem;
         text-decoration: none;
     }
 
-    .top-row[b-69ndupoki1]  a:hover, .top-row[b-69ndupoki1]  .btn-link:hover {
+    .top-row[b-f8ltaaqajf]  a:hover, .top-row[b-f8ltaaqajf]  .btn-link:hover {
         text-decoration: underline;
     }
 
-    .top-row[b-69ndupoki1]  a:first-child {
+    .top-row[b-f8ltaaqajf]  a:first-child {
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
 @media (max-width: 640.98px) {
-    .top-row:not(.auth)[b-69ndupoki1] {
+    .top-row:not(.auth)[b-f8ltaaqajf] {
         display: none;
     }
 
-    .top-row.auth[b-69ndupoki1] {
+    .top-row.auth[b-f8ltaaqajf] {
         justify-content: space-between;
     }
 
-    .top-row[b-69ndupoki1]  a, .top-row[b-69ndupoki1]  .btn-link {
+    .top-row[b-f8ltaaqajf]  a, .top-row[b-f8ltaaqajf]  .btn-link {
         margin-left: 0;
     }
 }
 
 @media (min-width: 641px) {
-    .page[b-69ndupoki1] {
+    .page[b-f8ltaaqajf] {
         flex-direction: row;
     }
 
-    .sidebar[b-69ndupoki1] {
+    .sidebar[b-f8ltaaqajf] {
         width: 250px;
         height: 100vh;
         position: sticky;
         top: 0;
     }
 
-    .top-row[b-69ndupoki1] {
+    .top-row[b-f8ltaaqajf] {
         position: sticky;
         top: 0;
         z-index: 1;
     }
 
-    .top-row.auth[b-69ndupoki1]  a:first-child {
+    .top-row.auth[b-f8ltaaqajf]  a:first-child {
         flex: 1;
         text-align: right;
         width: 0;
     }
 
-    .top-row[b-69ndupoki1], article[b-69ndupoki1] {
+    .top-row[b-f8ltaaqajf], article[b-f8ltaaqajf] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
@@ -148,47 +191,4 @@ main[b-69ndupoki1] {
         height: calc(100vh - 3.5rem);
         overflow-y: auto;
     }
-}
-/* /Shared/SideBarLayout.razor.rz.scp.css */
-:root[b-wprwvct1hk] {
-    --sidebar-width: 250px;
-    --toolbar-height: 52px;
-}
-
-.e-toolbar[b-wprwvct1hk] {
-    z-index: 1000;
-    background-color: #566575;
-}
-
-    .e-toolbar .e-toolbar-items[b-wprwvct1hk] {
-        background-color: transparent;
-        height: var(--toolbar-height) !important;
-    }
-
-    .e-toolbar .e-tbar-btn[b-wprwvct1hk] {
-        background: transparent;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
-        
-        color: #ffffff;
-    }
-
-.e-btn[b-wprwvct1hk], .e-css.e-btn[b-wprwvct1hk] {
-    background-color: transparent;
-}
-
-
-.e-sidebar[b-wprwvct1hk] {
-    color: black;
-    background-color: slategray;
-    height: 100vh;
-    width: var(--sidebar-width) !important;
-}
-
-.text-content[b-wprwvct1hk] {
-    font-size: 1.5rem;
-    padding: 3rem;
-}
-
-.main > div[b-wprwvct1hk] {
-    padding: 0px !important;
 }
