@@ -8,7 +8,7 @@
   "resources": {
     "assembly": {
       "BlazorAnimate.dll": "sha256-vGiYBLVyybxLbKCTltgck+lsQRQ3jNQ5QnA+alJq\/7Q=",
-      "BlazorClientStart.dll": "sha256-4BC+zjaS5DEV8Z8QJda8xQlPUgecjZRM\/+5lehAK83w=",
+      "BlazorClientStart.dll": "sha256-JkQ73lxr0OPFYN8HKxj6kPomo3xjURzMsan71yQo+1M=",
       "Microsoft.AspNetCore.Components.dll": "sha256-kZC9kTtGrXDctyL595G7fdfwv\/GOXWlhbCsTTgClL4A=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-kjwlSmrAG30e0fvqZf1EpGfvLjNBMUjkvbm63O2tfDo=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-MVyMtv+1TY01uOllXLi\/jVhDD647To1MslYBzzGMbkM=",
@@ -58,7 +58,7 @@
       "System.Net.Http.Json.dll": "sha256-4o3\/LbLgBfOPB+1e1GVQ+rGKAifXb5ceJZUq6JXykdc=",
       "System.Net.Primitives.dll": "sha256-aIKNx5GV\/0rhwtSkBJBwhVMc1cbdkaKIFJzSgLGUQw4=",
       "System.ObjectModel.dll": "sha256-\/dUFGUr6WWCKA2RpdhLvcidiSc5vsvFOdOC9ggyYIDw=",
-      "System.Private.CoreLib.dll": "sha256-+EiGT7trThGJ\/jVSuLG69ZEdO25IJ64DGaEw532TmFQ=",
+      "System.Private.CoreLib.dll": "sha256-Ba6IpivDOmtvfNInOn7D0B7KjbEU9bN9Fr418gtpfKo=",
       "System.Private.DataContractSerialization.dll": "sha256-oED7lLf7tvNVi6N6tRMTFCKYn7ymttQ\/jnn164DHRH8=",
       "System.Private.Uri.dll": "sha256-NCSctYrN4i9iDNJlxkScIDCjnjGdIVcwjTtnOyWDfxE=",
       "System.Private.Xml.dll": "sha256-RqODX4YpOh57M2pgZGzcJLFX9fF+iYJhSBYuELeN31A=",
@@ -66,7 +66,7 @@
       "System.Reflection.dll": "sha256-J3rWZE8SbdMEQZNocSfUrwWp3i928mrGBcKzxLXsF48=",
       "System.Reflection.Extensions.dll": "sha256-wZr5RYNVfWUn1aijqWlCvna5toJ6owNPkl\/hvNGGtSU=",
       "System.Resources.ResourceManager.dll": "sha256-5cV+IOUBCh9tnAXJYkzqqUxJlWCEsuXIrmiMNn1FLjM=",
-      "System.Runtime.dll": "sha256-qKO8DJ0Yx3IG3pF25DBfcJb0Lu9nmMAIwXFzMGiDxa0=",
+      "System.Runtime.dll": "sha256-+tGdZU9oPAGax7gbUy9ba\/xM87z2YTDfoW5w1DXR\/ZY=",
       "System.Runtime.Extensions.dll": "sha256-Gh7oLc7cIz8\/Z9cbQWyF330x1broGINmMYVDfYYqJik=",
       "System.Runtime.InteropServices.JavaScript.dll": "sha256-zhBgy7xQKCG4WzbFKZAvKiQtQ6+lbW4xn63UUC0Hvac=",
       "System.Runtime.Serialization.Formatters.dll": "sha256-mzxI61WczCn\/q5Gc5CyYAWKbd5KV6iuD\/EKUkJUW8rI=",
