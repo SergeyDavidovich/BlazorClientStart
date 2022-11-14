@@ -1,1 +1,1 @@
-# BlazorClientStart - version 7.0
+BlazorClientStart - version 7.0
