@@ -17,7 +17,7 @@
       "url": "css\/app-light.css"
     },
     {
-      "hash": "sha256-10KEeWxsgry5D9LUZc0K86lpIg9RcWdyyBB5sXq6Ypk=",
+      "hash": "sha256-\/kVSp8K\/ELKxBJlDMQsZcMARIynfWgABxrubrq04woo=",
       "url": "css\/app.css"
     },
     {
@@ -27,6 +27,30 @@
     {
       "hash": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
       "url": "css\/bootstrap\/bootstrap.min.css.map"
+    },
+    {
+      "hash": "sha256-U8uyYI2hGhtuZLvl7d89OOVhWpU58hu5KAvqx+ta4Qc=",
+      "url": "css\/md-css\/colors.module.css"
+    },
+    {
+      "hash": "sha256-WrNFNNi2w8e2G\/d+A5993cm\/vY1PjCtKKwfvWF6nRF0=",
+      "url": "css\/md-css\/theme.css"
+    },
+    {
+      "hash": "sha256-6OuiZLHCrBamZkgiijckmBvo6e7529k3qlWg8WVkqwg=",
+      "url": "css\/md-css\/theme.dark.css"
+    },
+    {
+      "hash": "sha256-4A\/5oma4V9ElXZ5pZCmT\/kqI9sUl44QkNVTc80LX3yk=",
+      "url": "css\/md-css\/theme.light.css"
+    },
+    {
+      "hash": "sha256-Gitl7Ni60CqJZ8ECwbLuK19wcq9DxgIGblesN62Gtj4=",
+      "url": "css\/md-css\/tokens.css"
+    },
+    {
+      "hash": "sha256-Pbss1o0YyEOZ4Kf9In04jrxU0d\/wPsX323X8mKRwMR8=",
+      "url": "css\/md-css\/typography.module.css"
     },
     {
       "hash": "sha256-+Q44zfEaCMmXduni5Td+IgCbk8sSUQwES2nWs+KKQz0=",
@@ -81,7 +105,7 @@
       "url": "images\/logo.jpg"
     },
     {
-      "hash": "sha256-YM179xqWfxmYTRI4I9Xh\/IiHJBGG74ONzFdYX0fMAGo=",
+      "hash": "sha256-gjtrsuHOFWICUUxgGG9W7fAQnx5c5sbbBkEQKIRZGFA=",
       "url": "index.html"
     },
     {
@@ -125,7 +149,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-hGXNh7tD1T0GCT2fEHfML0h6EYixQkVKGg8+z3MbKEA=",
+      "hash": "sha256-n+O53+A+xKf5oR+r3vLE8UDZRTVEFVokLb+47IKxBWE=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -133,7 +157,7 @@
       "url": "_framework\/BlazorAnimate.dll"
     },
     {
-      "hash": "sha256-F3t55FT7\/WauXuOdDIdP0kypLGuTebt8JlHJ8sXn6j4=",
+      "hash": "sha256-8Lv50oBJjlmHy39OBhEJCfVgrupwtgBc4TIqlGLyVdM=",
       "url": "_framework\/BlazorClientStart.dll"
     },
     {
@@ -421,7 +445,7 @@
       "url": "_framework\/System.Xml.Linq.dll"
     },
     {
-      "hash": "sha256-iKmOFdA\/WJnixG5x7E7JsLghpKZ4bmrrrLafx+7arFY=",
+      "hash": "sha256-XDSuO\/cO57yk8OqA\/\/VladIeWwQu8oewilZBo6iysTo=",
       "url": "BlazorClientStart.styles.css"
     },
     {
@@ -657,5 +681,5 @@
       "url": "_content\/Syncfusion.Blazor.Themes\/tailwind.css"
     }
   ],
-  "version": "7F8eGd92"
+  "version": "Ibj6WUfm"
 };

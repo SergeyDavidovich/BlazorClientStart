@@ -8,7 +8,7 @@
   "resources": {
     "assembly": {
       "BlazorAnimate.dll": "sha256-vGiYBLVyybxLbKCTltgck+lsQRQ3jNQ5QnA+alJq\/7Q=",
-      "BlazorClientStart.dll": "sha256-F3t55FT7\/WauXuOdDIdP0kypLGuTebt8JlHJ8sXn6j4=",
+      "BlazorClientStart.dll": "sha256-8Lv50oBJjlmHy39OBhEJCfVgrupwtgBc4TIqlGLyVdM=",
       "Microsoft.AspNetCore.Components.dll": "sha256-kZC9kTtGrXDctyL595G7fdfwv\/GOXWlhbCsTTgClL4A=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-kjwlSmrAG30e0fvqZf1EpGfvLjNBMUjkvbm63O2tfDo=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-MVyMtv+1TY01uOllXLi\/jVhDD647To1MslYBzzGMbkM=",
