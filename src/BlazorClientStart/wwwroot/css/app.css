@@ -3,6 +3,17 @@
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+body {
+    background-color: var(--md-sys-color-background);
+    color: var(--md-sys-color-on-background);
+}
+
+.md-toolbar {
+    background-color: var(--md-sys-color-primary);
+}
+.md-sidebar{
+    background-color:var(--md-sys-color-primary)!important;
+}
 
 h1:focus {
     outline: none;

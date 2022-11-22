@@ -25,12 +25,12 @@
 *@
 
 <Animate Animation="Animations.FadeDown">
-    <div id="toolbar" class="bg-dark">
+    <div id="toolbar" class="md-toolbar">
         <button class="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
         <button class="theme-button" @onclick="@ThemeToggle"><span class="@themeIconClass"></span></button>
     </div>
 </Animate>
-<SfSidebar @ref="@sidebarObj" @bind-IsOpen="IsSidebarOpen" Type="SidebarType.Over" class="bg-primary"
+<SfSidebar @ref="@sidebarObj" @bind-IsOpen="IsSidebarOpen" Type="SidebarType.Over" class="md-sidebar"
            EnablePersistence="false" CloseOnDocumentClick="false" ShowBackdrop="false"
            EnableGestures="true" MediaQuery="(min-width: 600px)">
 
