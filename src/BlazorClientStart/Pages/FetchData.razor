@@ -18,7 +18,7 @@
 else
 {
     <Animate Animation="Animations.FadeIn" DurationMs="1000">
-        <table class="table" style="width:60%; margin:auto; color:var(--bs-body-color)!important">
+        <table class="table" style="width:60%; margin:auto; ">
             <thead>
                 <tr>
                     <th>Date</th>
@@ -41,6 +41,11 @@ else
         </table>
     </Animate>
 }
+<style>
+    .table{
+        color: var(--md-sys-color-on-background)!important;
+    }
+</style>
 @code {
     private WeatherForecast[]? forecasts;
 

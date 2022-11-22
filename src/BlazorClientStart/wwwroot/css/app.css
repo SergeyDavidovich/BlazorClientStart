@@ -9,10 +9,11 @@ body {
 }
 
 .md-toolbar {
-    background-color: var(--md-sys-color-primary);
+    background-color: var(--md-sys-color-surface-variant);
 }
-.md-sidebar{
-    background-color:var(--md-sys-color-primary)!important;
+.md-sidebar {
+    background-color: var(--md-sys-color-secondary-container)!important;
+    color: var(--md-sys-color-on-secondary-container)!important;
 }
 
 h1:focus {
