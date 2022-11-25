@@ -35,7 +35,7 @@
 <body>
     <app>
         <div style="height: 100%; width: 100%; margin: 0; position: fixed;
-            background-color: #8EC5FC; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);">
+            background-color: #8EC5FC; background-image: linear-gradient(40deg, #8EC5FC 0%, #E0C3FC 100%);">
             <div style="display:flex;justify-content:center;">
                 <div class="container body-content start">
                     <hr />
@@ -51,42 +51,31 @@
             </div>
         </div>
     </app>
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
 
-        <!--<div style="height: 100%; width: 100%; margin: 0; position: fixed;
-                background-color: #FFFFFF; background-image: linear-gradient(315deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);">
-            <svg class="loading-progress">
-                <circle r="40%" cx="50%" cy="50%" />
-                <circle r="40%" cx="50%" cy="50%" />
-            </svg>
-            <div class="loading-progress-text"></div>
-        </div>-->
-  
+    <script>
+        function setTheme(theme) {
+            document.getElementsByTagName('body')[0].style.display = 'none';
+            let synclink = document.getElementById('theme');
+            synclink.href = '_content/Syncfusion.Blazor.Themes/' + theme + '.css';
+        }
+        function SetDarkModeTheme(isDark) {
+            //document.getElementsByTagName('body')[0].style.display = 'none';
 
-        <div id="blazor-error-ui">
-            An unhandled error has occurred.
-            <a href="" class="reload">Reload</a>
-            <a class="dismiss">🗙</a>
-        </div>
-        <script src="_framework/blazor.webassembly.js"></script>
-        <script>navigator.serviceWorker.register('service-worker.js');</script>
+            let light_dark_mode = document.getElementById('light-dark-mode');
 
-        <script>
-            function setTheme(theme) {
-                document.getElementsByTagName('body')[0].style.display = 'none';
-                let synclink = document.getElementById('theme');
-                synclink.href = '_content/Syncfusion.Blazor.Themes/' + theme + '.css';
-            }
-            function SetDarkModeTheme(isDark) {
-                //document.getElementsByTagName('body')[0].style.display = 'none';
-
-                let light_dark_mode = document.getElementById('light-dark-mode');
-
-                //light_dark_mode.href = isDark ? 'css/app-dark.css' : 'css/app-light.css';
-                light_dark_mode.href = isDark ? 'css/md-css/theme.dark.css' : 'css/md-css/theme.light.css';
+            //light_dark_mode.href = isDark ? 'css/app-dark.css' : 'css/app-light.css';
+            light_dark_mode.href = isDark ? 'css/md-css/theme.dark.css' : 'css/md-css/theme.light.css';
 
 
-                //setTimeout(function () { document.getElementsByTagName('body')[0].style.display = 'block'; }, 200);
-            }
-        </script>
+            //setTimeout(function () { document.getElementsByTagName('body')[0].style.display = 'block'; }, 200);
+        }
+    </script>
 </body>
 </html>

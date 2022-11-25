@@ -17,7 +17,7 @@
       "url": "css\/app-light.css"
     },
     {
-      "hash": "sha256-HtsL6T\/kL1o92qUsBSHQZGEse4lwMOqwspYOQh8dL\/Q=",
+      "hash": "sha256-wPuzIv8ixBabYyP5rE\/6vqv4pSUYSGjBt+8X2gb60cU=",
       "url": "css\/app.css"
     },
     {
@@ -105,7 +105,7 @@
       "url": "images\/logo.jpg"
     },
     {
-      "hash": "sha256-UGnNqbp6tLHcM7NEwXA2tjeSmUBtEHrvD4Ww6YduZUc=",
+      "hash": "sha256-uDoNvAaVyN0w\/shSPyfQynjH\/bogccWpydfpzZZbNBY=",
       "url": "index.html"
     },
     {
@@ -681,5 +681,5 @@
       "url": "_content\/Syncfusion.Blazor.Themes\/tailwind.css"
     }
   ],
-  "version": "edN0wNzx"
+  "version": "Nt+jlnL0"
 };
