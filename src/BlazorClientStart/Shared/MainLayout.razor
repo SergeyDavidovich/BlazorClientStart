@@ -27,14 +27,14 @@
 <Animate Animation="Animations.FadeDown">
     <div id="toolbar" class="md-toolbar">
         <button class="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
-        <button class="theme-button" @onclick="@ThemeToggle"><span class="@themeIconClass"></span></button>
+        <button class="theme-button" @onclick="@ThemeToggleAsync"><span class="@themeIconClass"></span></button>
     </div>
 </Animate>
 <SfSidebar @ref="@sidebarObj" @bind-IsOpen="IsSidebarOpen" Type="SidebarType.Over" class="md-sidebar"
            EnablePersistence="false" CloseOnDocumentClick="false" ShowBackdrop="false"
            EnableGestures="true" MediaQuery="(min-width: 600px)">
 
-   <ChildContent>
+    <ChildContent>
         <div>
             <div style="display:flex; height:var(--toolbar-height); justify-content:left; align-content:center">
                 <button class="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
@@ -106,8 +106,8 @@
 
     .e-sidebar {
         /*        color: black;
-                    background-color: slategray;
-            */ height: 100vh;
+                                background-color: slategray;
+                        */ height: 100vh;
         width: var(--sidebar-width) !important;
     }
 
@@ -128,33 +128,34 @@
     string themeIconClass = "oi oi-sun";
 
     [CascadingParameter]
-    public bool IsThemeDark { get; set; } = false;
+    public bool IsThemeDark { get; set; }
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
 #if DEBUG
-    Thread.Sleep(6000);
+    //Thread.Sleep(6000);
 #endif
+        IsThemeDark = false;
+        await SetThemeAsync(IsThemeDark);
     }
 
     public void SideBarToggle()
     {
         IsSidebarOpen = !IsSidebarOpen;
     }
-    public void ThemeToggle()
+    public async Task ThemeToggleAsync()
     {
         IsThemeDark = !IsThemeDark;
-        themeIconClass = GetThemeIcon(IsThemeDark);
-
-        if (IsThemeDark)
-            JS.InvokeAsync<bool>("SetDarkModeTheme", true);
-        else
-            JS.InvokeAsync<object>("SetDarkModeTheme", false);
-
+        await SetThemeAsync(IsThemeDark);
     }
-    private string GetThemeIcon(bool isDark)
+    private async Task SetThemeAsync(bool isdark)
     {
-        if (isDark) return "oi oi-moon";
+        themeIconClass = GetCurrentThemeIcon(IsThemeDark);
+        await JS.InvokeAsync<bool>("SetDarkModeTheme", isdark);
+    }
+    private string GetCurrentThemeIcon(bool IsThemeDark)
+    {
+        if (IsThemeDark) return "oi oi-moon";
         else return "oi oi-sun";
     }
     private void SetSyncfusionTheme(string name)
