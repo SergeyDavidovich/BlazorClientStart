@@ -106,8 +106,8 @@
 
     .e-sidebar {
         /*        color: black;
-                                background-color: slategray;
-                        */ height: 100vh;
+                                            background-color: slategray;
+                                    */ height: 100vh;
         width: var(--sidebar-width) !important;
     }
 
@@ -134,6 +134,7 @@
     {
 #if DEBUG
     //Thread.Sleep(6000);
+   //await Task.Delay(6000);
 #endif
         IsThemeDark = false;
         await SetThemeAsync(IsThemeDark);
@@ -151,7 +152,7 @@
     private async Task SetThemeAsync(bool isdark)
     {
         themeIconClass = GetCurrentThemeIcon(IsThemeDark);
-        await JS.InvokeAsync<bool>("SetDarkModeTheme", isdark);
+        await JS.InvokeVoidAsync("SetDarkModeTheme", isdark);
     }
     private string GetCurrentThemeIcon(bool IsThemeDark)
     {
