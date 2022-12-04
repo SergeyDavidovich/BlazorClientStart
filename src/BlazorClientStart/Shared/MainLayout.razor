@@ -5,19 +5,18 @@
 @inject IJSRuntime JS
 
 <Animate Animation="Animations.FadeDown">
-    <div id="toolbar" class="md-toolbar">
-        <button class="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
-        <button class="theme-button" @onclick="@ThemeToggleAsync"><span class="@themeIconClass"></span></button>
+    <div id="toolbar">
+        <button id="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
+        <button id="theme-button" @onclick="@ThemeToggleAsync"><span class="@themeIconClass"></span></button>
     </div>
 </Animate>
-<SfSidebar @ref="@sidebarObj" @bind-IsOpen="IsSidebarOpen" Type="SidebarType.Over" class="md-sidebar"
+<SfSidebar ID="sidebar" @ref="@sidebarObj" @bind-IsOpen="IsSidebarOpen" Type="SidebarType.Over" class="md-sidebar"
            EnablePersistence="false" CloseOnDocumentClick="false" ShowBackdrop="false"
            EnableGestures="true" MediaQuery="(min-width: 600px)">
-
     <ChildContent>
         <div>
             <div style="display:flex; height:var(--toolbar-height); justify-content:left; align-content:center">
-                <button class="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
+                <button id="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
             </div>
             <div style="display:flex; justify-content:center; align-content:center;">
                 <img height="120" width="200" src="images/logo.jpg" />
@@ -41,13 +40,21 @@
     #toolbar {
         display: flex;
         border: none;
-        color: var(--md-sys-color-on-tertiary);
+        background-color: var(--md-sys-color-primary-container)!important;
+        color: var(--md-sys-color-on-primary-container)!important;
         height: var(--toolbar-height);
         width: 100vw;
         box-shadow: 0 3px 5px rgba(0, 0, 0, .25);
     }
 
-    .menu-button {
+    #sidebar {
+        background-color: var(--md-sys-color-secondary-container) !important;
+        color: var(--md-sys-color-on-secondary-container) !important;
+        height: 100vh;
+        width: var(--sidebar-width) !important;
+    }
+
+    #menu-button {
         background: none;
         border: none;
         font-size: 16px;
@@ -55,49 +62,13 @@
         margin-left: 8px;
     }
 
-    .theme-button {
+    #theme-button {
         background: none;
         border: none;
         font-size: 16px;
-        color: white;
+        color: inherit;
         margin-left: auto;
         margin-right: 12Px;
-    }
-
-    /*.e-toolbar {
-        z-index: 1000;
-        background-color: #566575;
-        box-shadow: 0 3px 5px rgba(0, 0, 0, .25);
-    }
-
-        .e-toolbar .e-toolbar-items {
-            background-color: transparent;
-            height: var(--toolbar-height) !important;
-        }
-
-        .e-toolbar .e-tbar-btn {
-            background: transparent;
-            color: #ffffff;
-        }
-
-    .e-btn, .e-css.e-btn {
-        background-color: transparent;
-    }*/
-
-    .e-sidebar {
-        /*        color: black;
-                                            background-color: slategray;
-                                    */ height: 100vh;
-        width: var(--sidebar-width) !important;
-    }
-
-    .text-content {
-        font-size: 1.5rem;
-        padding: 3rem;
-    }
-
-    .main > div {
-        padding: 0px !important;
     }
 </style>
 
