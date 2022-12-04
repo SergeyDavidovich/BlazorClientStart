@@ -4,26 +4,6 @@
 
 @inject IJSRuntime JS
 
-@*
-    <SfToolbar Height="52px">
-    <ToolbarItems>
-        <ToolbarItem Text="Toogle" Align="ItemAlign.Left">
-            <Template>
-                <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" @onclick="SideBarToggle"></SfButton>
-            </Template>
-        </ToolbarItem>
-        <ToolbarItem Text="Toogle" Align="ItemAlign.Right">
-            <Template>
-                <SfButton @ref="ThemeToggler" IconCss="@themeIconClass" IconPosition="IconPosition.Right" IsToggle="true" @onclick="ThemeToggle">
-                </SfButton>
-            </Template>
-        </ToolbarItem>
-        <ToolbarItem Text=@($"IsOpen = {@IsSidebarOpen.ToString()}") Align="ItemAlign.Right"></ToolbarItem>
-        <ToolbarItem Text=@($"IsDark = {IsThemeDark.ToString()}") Align="ItemAlign.Right"></ToolbarItem>
-    </ToolbarItems>
-</SfToolbar>
-*@
-
 <Animate Animation="Animations.FadeDown">
     <div id="toolbar" class="md-toolbar">
         <button class="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
@@ -61,7 +41,7 @@
     #toolbar {
         display: flex;
         border: none;
-        color: white;
+        color: var(--md-sys-color-on-tertiary);
         height: var(--toolbar-height);
         width: 100vw;
         box-shadow: 0 3px 5px rgba(0, 0, 0, .25);
@@ -84,7 +64,7 @@
         margin-right: 12Px;
     }
 
-    .e-toolbar {
+    /*.e-toolbar {
         z-index: 1000;
         background-color: #566575;
         box-shadow: 0 3px 5px rgba(0, 0, 0, .25);
@@ -102,7 +82,7 @@
 
     .e-btn, .e-css.e-btn {
         background-color: transparent;
-    }
+    }*/
 
     .e-sidebar {
         /*        color: black;
