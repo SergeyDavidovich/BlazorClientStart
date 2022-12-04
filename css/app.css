@@ -8,14 +8,6 @@ body {
     color: var(--md-sys-color-on-background);
 }
 
-.md-toolbar {
-    background-color: var(--md-sys-color-tertiary);
-    color: var(--md-sys-color-on-tertiary);
-}
-.md-sidebar {
-    background-color: var(--md-sys-color-secondary)!important;
-    color: var(--md-sys-color-on-secondary-container)!important;
-}
 
 h1:focus {
     outline: none;
